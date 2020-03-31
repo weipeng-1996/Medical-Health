@@ -8,4 +8,6 @@
     <color name="Spaire">#CDCDB4</color>
     <color name="btn">#449dd5</color>
     <color name="green">#5dc534</color>
+    <color name="divider">#2B2B2B</color>
+    <color name="background_gray">#f2f2f2</color>
 </resources>

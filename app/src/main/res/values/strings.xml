@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">MedicalHealth</string>
+    <string name="upload_picture">上传图片</string>
+    <string name="health_log">健康日志</string>
+    <string name="text_title_recommend">为你推荐</string>
+    <string name="title_risk_assess">风险评估</string>
+    <string name="title_health_advice">健康建议</string>
 </resources>
