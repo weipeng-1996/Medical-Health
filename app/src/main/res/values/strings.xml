@@ -5,4 +5,10 @@
     <string name="text_title_recommend">为你推荐</string>
     <string name="title_risk_assess">风险评估</string>
     <string name="title_health_advice">健康建议</string>
+    <string name="tab_bar_home">首页</string>
+    <string name="tab_bar_statistics">统计</string>
+    <string name="tab_bar_mine">我的</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

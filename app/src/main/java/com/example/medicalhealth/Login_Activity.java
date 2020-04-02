@@ -111,7 +111,7 @@ public class Login_Activity extends AppCompatActivity implements View.OnClickLis
     protected void readUserInfo() {
         if (login(edit_account.getText().toString(), edit_password.getText().toString())) {
             Toast.makeText(this, "登陆成功！", Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(Login_Activity.this, UsersInfoActivity.class);
+            Intent intent = new Intent(Login_Activity.this, MainActivity.class);
             intent.putExtra("Username",edit_account.getText().toString());
             startActivity(intent);
         } else {

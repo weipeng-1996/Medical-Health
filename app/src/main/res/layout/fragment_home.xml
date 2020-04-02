@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".UsersInfoActivity">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,19 +16,28 @@
             android:layout_height="80dp"
             android:background="@drawable/layout_border"
             android:orientation="horizontal">
+
             <ImageView
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:background="@drawable/layout_border"
                 android:src="@drawable/people_fill" />
+
             <LinearLayout
                 android:layout_width="300dp"
                 android:layout_height="80dp"
                 android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="1dp"
+                    android:background="@color/Spaire" />
+
                 <LinearLayout
                     android:layout_width="300dp"
                     android:layout_height="40dp"
                     android:orientation="horizontal">
+
                     <TextView
                         android:layout_width="60dp"
                         android:layout_height="40dp"
@@ -37,22 +46,21 @@
                         android:textAllCaps="false"
                         android:textColor="@color/black"
                         android:textSize="14sp" />
+
                     <TextView
                         android:id="@+id/text_name"
-                        android:textColor="@color/black"
-                        android:textSize="14sp"
-                        android:gravity="center|left"
                         android:layout_width="240dp"
-                        android:layout_height="40dp" />
+                        android:layout_height="40dp"
+                        android:gravity="center|left"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
                 </LinearLayout>
-                <ImageView
-                    android:layout_width="300dp"
-                    android:layout_height="1dp"
-                    android:background="@color/Spaire"/>
+
                 <LinearLayout
                     android:layout_width="300dp"
                     android:layout_height="40dp"
                     android:orientation="horizontal">
+
                     <TextView
                         android:layout_width="60dp"
                         android:layout_height="40dp"
@@ -61,13 +69,14 @@
                         android:textAllCaps="false"
                         android:textColor="@color/black"
                         android:textSize="14sp" />
+
                     <TextView
                         android:id="@+id/text_condition"
-                        android:textSize="14sp"
-                        android:textColor="@color/green"
-                        android:gravity="center|left"
                         android:layout_width="240dp"
-                        android:layout_height="40dp" />
+                        android:layout_height="40dp"
+                        android:gravity="center|left"
+                        android:textColor="@color/green"
+                        android:textSize="14sp" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
@@ -88,8 +97,8 @@
                     android:id="@+id/upload"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
                     android:layout_weight="1"
+                    android:orientation="vertical"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@id/log"
                     app:layout_constraintStart_toStartOf="parent"
@@ -114,8 +123,8 @@
                     android:id="@+id/log"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
                     android:layout_weight="1"
+                    android:orientation="vertical"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@id/upload"
@@ -149,12 +158,12 @@
                     android:layout_height="wrap_content"
                     android:text="@string/text_title_recommend"
                     android:textColor="@color/black"
-                    android:textSize="20sp"/>
+                    android:textSize="20sp" />
 
                 <android.support.v7.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
-                    app:cardBackgroundColor="@color/background_gray"
+                    app:cardBackgroundColor="@color/card_background"
                     app:cardCornerRadius="8dp">
 
                     <RelativeLayout
@@ -166,8 +175,8 @@
                             android:id="@+id/image"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/recommend"
-                            android:scaleType="centerCrop"/>
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/recommend" />
 
                         <TextView
                             style="@style/TextAppearance.AppCompat.Subhead"
@@ -192,32 +201,34 @@
                     android:layout_height="wrap_content"
                     android:text="@string/title_risk_assess"
                     android:textColor="@color/black"
-                    android:textSize="20sp"/>
+                    android:textSize="20sp" />
 
                 <android.support.v7.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
-                    app:cardBackgroundColor="@color/background_gray"
+                    app:cardBackgroundColor="@color/card_background"
                     app:cardCornerRadius="8dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:gravity="center">
+                        android:gravity="center"
+                        android:orientation="vertical">
+
                         <TextView
                             style="@style/TextAppearance.AppCompat.Subhead"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="8dp"
                             android:text="当前新冠肺炎检测呈阳性，患病风险：" />
+
                         <TextView
                             style="@style/TextAppearance.AppCompat.Subhead"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="8dp"
-                            android:textColor="@color/colorAccent"
-                            android:text="极高" />
+                            android:text="极高"
+                            android:textColor="@color/colorAccent" />
                     </LinearLayout>
 
                 </android.support.v7.widget.CardView>
@@ -234,38 +245,40 @@
                     android:layout_height="wrap_content"
                     android:text="@string/title_health_advice"
                     android:textColor="@color/black"
-                    android:textSize="20sp"/>
+                    android:textSize="20sp" />
 
                 <android.support.v7.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
-                    app:cardBackgroundColor="@color/background_gray"
+                    app:cardBackgroundColor="@color/card_background"
                     app:cardCornerRadius="8dp">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:gravity="center_vertical">
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal">
+
                             <TextView
                                 style="@style/TextAppearance.AppCompat.Subhead"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:padding="8dp"
                                 android:text="您当前患病风险较高，推荐您：" />
+
                             <TextView
                                 style="@style/TextAppearance.AppCompat.Subhead"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:padding="8dp"
-                                android:textColor="@color/btn"
-                                android:text="及时去医院就医" />
+                                android:text="及时去医院就医"
+                                android:textColor="@color/btn" />
                         </LinearLayout>
-
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
             </LinearLayout>
