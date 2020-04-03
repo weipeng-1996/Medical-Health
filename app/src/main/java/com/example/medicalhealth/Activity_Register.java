@@ -155,7 +155,7 @@ public class Activity_Register extends Activity implements View.OnClickListener 
         values.put("username", username);
         values.put("password", userpassword);
         db.insert("usertable", null, values);
-        db.close();
+        db.close(); // 注册后,关闭数据库
     }
 
     /**
