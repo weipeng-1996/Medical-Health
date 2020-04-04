@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -105,11 +103,11 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <Button
+                        android:id="@+id/upload_btn"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_gravity="center"
-                        android:background="@drawable/upload"
-                        android:onClick="uploadPicture" />
+                        android:background="@drawable/upload" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -131,11 +129,11 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <Button
+                        android:id="@+id/log_btn"
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_gravity="center"
-                        android:background="@drawable/log"
-                        android:onClick="viewLog" />
+                        android:background="@drawable/log" />
 
                     <TextView
                         android:layout_width="match_parent"

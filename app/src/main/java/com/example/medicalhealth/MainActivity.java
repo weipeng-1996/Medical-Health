@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -17,25 +18,12 @@ public class MainActivity extends AppCompatActivity {
     private int lastIndex;
     ArrayList<Fragment> fragments;
 
-    private TextView text_name, text_condition;
-    private String name;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         init();
-//        initUserInfo();
     }
-
-//    protected void initUserInfo() {
-//        Intent intent = getIntent();
-//        name = intent.getStringExtra("Username");
-//        text_name = (TextView) findViewById(R.id.text_name);
-//        text_name.setText(name);
-//        text_condition = (TextView) findViewById(R.id.text_condition);
-//        text_condition.setText("在线");
-//    }
 
     private void init() {
         fragments = new ArrayList<>();
